@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:gravity="fill"
+        android:paddingLeft="10dp"
+        android:text="1."
+        android:id="@+id/category_sr"
+        />
+    <TextView
+        android:layout_toRightOf="@id/category_sr"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:gravity="fill"
+        android:paddingLeft="10dp"
+        android:text="Sci-Fi"
+        android:id="@+id/category_name"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_centerInParent="true"
+        android:layout_height="50dp"
+        android:id="@+id/cat_edit"
+        android:src="@drawable/ic_edit"
+        android:layout_toRightOf="@id/category_name"
+        android:tint="@color/moviecolor"/>
+    <ImageView
+        android:id="@+id/cat_delete"
+        android:layout_width="50dp"
+        android:layout_centerInParent="true"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_delete"
+        android:layout_toRightOf="@id/cat_edit"
+        android:tint="@color/moviecolor"/>
+
+</RelativeLayout>

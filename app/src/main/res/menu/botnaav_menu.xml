@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/movie_ic"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/movies"
+        android:iconTint="@color/whitecolor"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/series_ic"
+        android:icon="@drawable/ic_series"
+        android:title="@string/series"
+        android:iconTint="@color/whitecolor"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/category_ic"
+        android:icon="@drawable/ic_category"
+        android:title="@string/categories"
+        android:iconTint="@color/whitecolor"
+        app:showAsAction="always"/>
+
+</menu>

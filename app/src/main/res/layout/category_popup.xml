@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Category name"
+        android:textColor="@color/moviecolor"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="category name"
+        android:layout_margin="10px"
+        android:paddingLeft="10dp"
+        android:background="@drawable/search_bg"
+        android:id="@+id/category_txt"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:background="@color/moviecolor"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:id="@+id/popup_save_btn"/>
+
+        <Button
+            android:id="@+id/popup_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cancel"
+            android:background="@color/moviecolor"
+            android:layout_margin="30dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

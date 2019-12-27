@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoviesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/search_bg"
+        android:drawableRight="@drawable/ic_search"
+        android:drawableTint="@color/moviecolor"
+        android:padding="10dp"
+        android:hint="Search movies"
+        android:id="@+id/search_movie"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_movie"
+            android:id="@+id/movie_list"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_add"
+            android:backgroundTint="@color/moviecolor"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/movie_float_btn"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

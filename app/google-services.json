@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "586143461060",
+    "firebase_url": "https://movieadmin-4e6f0.firebaseio.com",
+    "project_id": "movieadmin-4e6f0",
+    "storage_bucket": "movieadmin-4e6f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586143461060:android:e6ea9ab3a617763165e391",
+        "android_client_info": {
+          "package_name": "com.mhk.movieappadminpanel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586143461060-v7vmpjnm3jhaq83nbpnfcoj67uj2b6fh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mhk.movieappadminpanel",
+            "certificate_hash": "e575ae9d53491ecdaece66695fc19462228e6595"
+          }
+        },
+        {
+          "client_id": "586143461060-pr2m0mu3qonj9a7ia161luvqofflonjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlT_D_sT2vG4ya0yVakyiev131Qh6pp_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586143461060-pr2m0mu3qonj9a7ia161luvqofflonjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
