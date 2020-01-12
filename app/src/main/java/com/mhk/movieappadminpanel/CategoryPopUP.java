@@ -48,7 +48,7 @@ public class CategoryPopUP extends DialogFragment {
                                 CategoryModel c = new CategoryModel(edt.getText().toString());
                                 FirebaseFirestore db = FirebaseFirestore.getInstance();
                                 CollectionReference ref = db.collection("categories");
-                                ref.add(c);
+                                ref.document(id).set(c);
                                 edt.setText("");
                                 CategoryFragment.getCategory();
                                 Toast.makeText(getContext(), "edit success", Toast.LENGTH_LONG).show();

@@ -88,6 +88,34 @@ public class MoviePopUp extends DialogFragment {
                 }
             });
         }
+        else{
+            categories.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                @Override
+                public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                    for (DocumentSnapshot snapshot:queryDocumentSnapshots){
+                        CategoryModel c=snapshot.toObject(CategoryModel.class);
+                        category_names.add(c.categoryName);
+                    }
+                    ArrayAdapter<String> adapter=new ArrayAdapter<>(getContext(),android.R.layout.simple_dropdown_item_1line,category_names);
+                    movie_cat.setAdapter(adapter);
+
+                    }
+
+            });
+            series.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                @Override
+                public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                    for(DocumentSnapshot snapshot:queryDocumentSnapshots){
+                        SeriesModel s=snapshot.toObject(SeriesModel.class);
+                        series_names.add(s.series_name);
+                    }
+                    ArrayAdapter<String> adapter=new ArrayAdapter<>(getContext(),android.R.layout.simple_dropdown_item_1line,series_names);
+                    movie_series.setAdapter(adapter);
+
+                    }
+
+            });
+        }
 
 
         btn_save.setOnClickListener(
